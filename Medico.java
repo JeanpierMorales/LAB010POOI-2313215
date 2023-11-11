@@ -37,6 +37,10 @@ public class Medico {
     public void setEspecialidad(String especialidad) {
         this.especialidad = especialidad;
     }
+    
+    public boolean tieneEspecialidad(String especialidad) {
+        return this.especialidad.equalsIgnoreCase(especialidad);
+    }
 
     @Override
     public String toString() {
